@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar II</title>
+
+    <script>
+
+        //1 Escreva um programa em que o usuário informe dois números utilizando o "prompt". Então escreva em tela o maior deles.
+
+        // var primeiro_valor = parseFloat(prompt("Informe o primeiro valor:"));
+        // var segundo_valor = parseFloat(prompt("Informe o segundo valor:"));
+
+        // if (primeiro_valor > segundo_valor) {
+        // alert("O primeiro valor é maior que o segundo.");
+
+        // } else if (primeiro_valor < segundo_valor) {
+        // alert("O segundo valor é maior.");
+
+        // } else {
+        // alert("O primeiro valor é igual ao segundo.");
+        // }
+
+        // 2 Faça um programa que leia um valor informado pelo usuário e diga se o valor informado é positivo, negativo ou zero.
+
+        // while (true) {
+        // var valor = parseFloat(prompt("Informe o valor:"));
+        //     if (isNaN(valor)) {
+        //     alert("Digite apenas números inteiros.");
+        //     } else {
+        //     break;
+        //     }
+        // }
+
+        // if(valor > 0) {
+        // alert("O valor é positivo.");
+
+        // } else if (valor < 0) {
+        // alert("O valor é negativo")
+
+        // } else {
+        // alert("O valor é igual a zero")
+        // }
+
+        // 3 Faça um programa para ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles.
+
+        // while (true) {
+        // var a = parseInt(prompt("Informe o primeiro valor:"));
+        // var b = parseInt(prompt("Informe o segundo valor:"));
+        // var c = parseInt(prompt("Informe o terceiro valor:"));
+        //     if (isNaN(a) || isNaN(b) || isNaN(c)) {
+        //     alert("Digite apenas números inteiros.");
+        //     } else {
+        //     break;
+        //     }
+        // }
+
+
+        // if (a > b && a > c) {
+        // alert("O maior valor é: " + a);
+        // } else if (b > a && b > c) {
+        // alert("O maior valor é: " + b);
+        // } else {
+        // alert("O maior valor é: " + c);
+        // }
+
+        // 4 Faça um programa que leia 3 valores informados pelo usuário (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.
+
+        // while (true) {
+        // var a = parseInt(prompt("Informe o primeiro valor:"));
+        // var b = parseInt(prompt("Informe o segundo valor:"));
+        // var c = parseInt(prompt("Informe o terceiro valor:"));
+        //     if (isNaN(a) || isNaN(b) || isNaN(c)) {
+        //     alert("Digite apenas números inteiros.");
+        //     } else {
+        //     break;
+        //     }
+        // }
+
+
+        // if (a > b && a > c) {
+        // if (b > c) {
+        // alert("A soma dos dois maiores números é: " + (a + b));
+        // } else {
+        // alert("A soma dos dois maiores números é: " + (a + c));
+        // }
+        // } else if (b > a && b > c) {
+        // if (a > c) {
+        // alert("A soma dos dois maiores números é: " + (b + a));
+        // } else {
+        // alert("A soma dos dois maiores números é: " + (b + c));
+        // }
+        // } else {
+        // if (a > b) {
+        // alert("A soma dos dois maiores números é: " + (c + a));
+        // } else {
+        // alert("A soma dos dois maiores números é: " + (c + b));
+        // }
+        // }
+
+        // 5 Faça um programa que leia 6 valores informados pelo usuário, calcule, exiba os números informados e escreva a média aritmética desses valores lidos.
+
+        // while (true) {
+        // var a = parseInt(prompt("Informe o primeiro valor:"));
+        // var b = parseInt(prompt("Informe o segundo valor:"));
+        // var c = parseInt(prompt("Informe o terceiro valor:"));
+        // var d = parseInt(prompt("Informe o quarto valor:"));
+        // var e = parseInt(prompt("Informe o quinto valor:"));
+        // var f = parseInt(prompt("Informe o sexto valor:"));
+        //     if (isNaN(a) || isNaN(b) || isNaN(c)) {
+        //     alert("Digite apenas números inteiros.");
+        //     } else {
+        //     break;
+        //     }
+        // }
+
+        // var media = (a + b + c + d + e + f)/6;
+        // alert("A média aritmética para os números" + a + ", " + b + ", " + c + ", " + d + ", " + e + ", "+ f + ", é igual a: " + media);
+
+        // 6 Faça um programa que receba quatro valores informados pelo usuário, mas informe somente o primeiro, o último e o maior de todos eles (considere que todos os números informados serão diferentes)
+
+        // var num1 = parseFloat(prompt("Digite o primeiro número:"));
+        // var num2 = parseFloat(prompt("Digite o segundo número:"));
+        // var num3 = parseFloat(prompt("Digite o terceiro número:"));
+        // var num4 = parseFloat(prompt("Digite o quarto número:"));
+
+        // var maior = num1;
+        // if (num2 > maior) {
+        // maior = num2;
+        // }
+        // if (num3 > maior) {
+        // maior = num3;
+        // }
+        // if (num4 > maior) {
+        // maior = num4;
+        // }
+
+        // alert("O primeiro valor é: " + num1 + "\nO último valor é: " + num4 + "\nO maior valor é: " + maior);
+
+        // 7 Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou.  
+
+        var soma = 0;
+        var valores = "";
+
+        for (var i = 1; i <= 6; i++) {
+            var valor = parseInt(prompt("Informe o valor:"));
+
+            if (valor < 72) {
+            soma += valor;
+            }
+
+            valores += (valor + ", ");
+        }
+
+        alert("Soma dos valores menores que 72, ela é igual a: "+ soma +"\n\nValores informados: " + valores);
+
+    </script>
+
+</head>
+
+</html>
