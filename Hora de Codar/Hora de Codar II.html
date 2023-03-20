@@ -142,20 +142,101 @@
 
         // 7 Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou.  
 
-        var soma = 0;
-        var valores = "";
+        // var soma = 0;
+        // var valores = "";
 
-        for (var i = 1; i <= 6; i++) {
-            var valor = parseInt(prompt("Informe o valor:"));
+        // for (var i = 1; i <= 6; i++) {
+        //     var valor = parseInt(prompt("Informe o valor:"));
 
-            if (valor < 72) {
-            soma += valor;
-            }
+        //     if (valor < 72) {
+        //     soma += valor;
+        //     }
 
-            valores += (valor + ", ");
+        //     valores += (valor + ", ");
+        // }
+
+        // alert("Soma dos valores menores que 72, ela é igual a: "+ soma +"\n\nValores informados: " + valores);
+
+        // 8 Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente"
+
+        // var soma = 0;
+
+        // for (var i = 1; i <= 4; i++) {
+        //     var valor = parseInt(prompt("Informe o valor:"));
+
+        //     if (valor > 0 && valor < 10) {
+        //         soma += valor;
+        //     } else {
+        //         alert("Os valores devem ser maiores que 0 e menores que 10.");
+        //         i--;
+        //     }
+        // }
+
+        // var media = soma / 4;
+
+        // if (media >= 5) {
+        //     alert("Você passou no teste.");
+        // } else {
+        //     alert("Tente novamente.");
+        // }
+
+        // 9 Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu).
+
+        // while (true) {
+        // var ano = parseInt(prompt("Informe o ano do seu nascimento.\nExemplo: 2003"));
+        // var idade = 2023 - ano
+
+        //     if (isNaN(ano) || ano > 2023 || ano < 1900) {
+        //         alert("Digite apenas datas válidas.");
+        //     } else if (idade >= 16) {
+        //         alert("Parabéns, você poderá votar nas próximas eleições!");
+        //     } else{
+        //         alert("Infelizmente você não poderá votar nas próximas eleições.");
+        //     }           
+        // }
+
+        // 10 Tendo como entrada a altura e o sexo (codificado da seguinte forma: 1: feminino 2: masculino) de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas: (72,7 * h) - 58 para homens; (62,1 * h) - 44,7 para mulheres
+
+        // var altura = parseFloat(prompt("Qual a sua altura em metros? Exemplo: 1.70"));
+        // var sexo = parseInt(prompt("Qual o seu sexo?\n1 - Feminino\n2 - Masculino"));
+
+        var altura = parseFloat(prompt("Qual a sua altura em cm? Exemplo: 1,70"));
+        var sexo = prompt("Qual o seu sexo? 1: feminino\n2: Masculino");
+
+        if (isNaN(sexo) || sexo > 2 || sexo < 1) {
+            alert("Digite apenas 1 ou 2.");
+        } else if (isNaN(altura)) {
+            alert("Digite números.");
+        } else if (sexo == 1) {
+            var pesoIdeal = (62.1 * altura / 100) - 44.7;
+            alert("Seu peso ideal é: " + pesoIdeal.toFixed(2) + "kg.");
+        } else if (sexo == 2) {
+            var pesoIdeal = (72.7 * altura / 100) - 58;
+            alert("Seu peso ideal é: " + pesoIdeal.toFixed(2) + "kg.");
         }
 
-        alert("Soma dos valores menores que 72, ela é igual a: "+ soma +"\n\nValores informados: " + valores);
+
+        // 11 Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes operações a serem executadas (codificada da seguinte forma: 1.Adição, 2.Subtração, 3.Divisão, 4.Multiplicação). O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos. Observação: Considere que só serão lidos os valores 1, 2, 3 ou 4 para as operações.
+
+        var valor1 = parseInt(prompt("Informe o primeiro valor:"));
+        var valor2 = parseInt(prompt("Informe o segundo valor:"));
+        var operacao = parseInt(prompt("Escolha uma operação:\n1 - Adição\n2 - Subtração\n3 - Divisão\n4 - Multiplicação"));
+
+        if (operacao === 1) {
+            var resultado = valor1 + valor2;
+            alert("Resultado da adição: " + resultado);
+        } else if (operacao === 2) {
+            var resultado = valor1 - valor2;
+            alert("Resultado da subtração: " + resultado);
+        } else if (operacao === 3) {
+            var resultado = valor1 / valor2;
+            alert("Resultado da divisão: " + resultado);
+        } else if (operacao === 4) {
+            var resultado = valor1 * valor2;
+            alert("Resultado da multiplicação: " + resultado);
+        } else {
+            alert("Operação inválida.");
+        }
 
     </script>
 
