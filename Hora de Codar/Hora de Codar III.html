@@ -5,198 +5,199 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="segredo_nao_abra/favicon.png" type="image/x-icon">
     <title>Hora de Codar III</title>
 
     <script>
 
-        // 1 Escreva um algoritmo para ler 2 valores informados pelo usuário e se o segundo valor informado for igual ou menor que ZERO, deve ser lido um novo valor. Ou seja, para o segundo valor não pode ser aceito o valor zero, nem um valor negativo.  O seu programa deve imprimir o resultado da divisão do primeiro valor lido pelo segundo valor.
+        // // 1 Escreva um algoritmo para ler 2 valores informados pelo usuário e se o segundo valor informado for igual ou menor que ZERO, deve ser lido um novo valor. Ou seja, para o segundo valor não pode ser aceito o valor zero, nem um valor negativo.  O seu programa deve imprimir o resultado da divisão do primeiro valor lido pelo segundo valor.
 
-        while (true) {
-        var a = parseFloat(prompt('Bem-vindo à calculadora de divisão! Informe o primeiro valor:'));
-        var b = parseFloat(prompt('Informe o primeiro segundo:'));
+        // while (true) {
+        // var a = parseFloat(prompt('Bem-vindo à calculadora de divisão! Informe o primeiro valor:'));
+        // var b = parseFloat(prompt('Informe o primeiro segundo:'));
 
-            if (isNaN(b) || b === 0 || b < 0) {
-            alert('Informe apenas números.'); 
-            } else {
-                var conta = a / b;
-                alert(`O resultado da divisão é ${conta}`);
-            }           
-        }
+        //     if (isNaN(b) || b === 0 || b < 0) {
+        //     alert('Informe apenas números.'); 
+        //     } else {
+        //         var conta = a / b;
+        //         alert(`O resultado da divisão é ${conta}`);
+        //     }           
+        // }
 
-        // 2 Crie uma bomba relógio (usando somente código - para deixar claro!) cuja contagem regressiva vá de 30 a 0. Utilize "document.write" para escrever em tela e no final da repetição escreva "EXPLOSÃO".
+        // // 2 Crie uma bomba relógio (usando somente código - para deixar claro!) cuja contagem regressiva vá de 30 a 0. Utilize "document.write" para escrever em tela e no final da repetição escreva "EXPLOSÃO".
 
-        document.write('Ah, não! Você ativou uma bomba! Tempo restante até a explosão da bomba: <br>')
-        var tempo = 30;
-        while (tempo >= 0) {
-            document.write(tempo + ' s; <br>');
-            tempo--;
-            if (tempo == -1) {
-                document.write('<span style="color: #e55944;">EXPLOSÃO</span>');
-                document.write('<img src="segredo_nao_abra/bomba.png">');
+        // document.write('Ah, não! Você ativou uma bomba! Tempo restante até a explosão da bomba: <br>')
+        // var tempo = 30;
+        // while (tempo >= 0) {
+        //     document.write(tempo + ' s; <br>');
+        //     tempo--;
+        //     if (tempo == -1) {
+        //         document.write('<span style="color: #e55944;">EXPLOSÃO</span>');
+        //         document.write('<img src="segredo_nao_abra/bomba.png">');
 
-            }
-        }
+        //     }
+        // }
 
-        // 3 Escreva um algoritmo para imprimir os números de 1 (inclusive) a 10 (inclusive) em ordem decrescente. Exemplo: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+        // // 3 Escreva um algoritmo para imprimir os números de 1 (inclusive) a 10 (inclusive) em ordem decrescente. Exemplo: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
 
-        for (var i = 10; i >= 1; i--) {
-            document.write(i);
-            if (i === 1) {
-                document.write(`.`);
-            } else {
-                document.write(`, `);
-            }
-        }
+        // for (var i = 10; i >= 1; i--) {
+        //     document.write(i);
+        //     if (i === 1) {
+        //         document.write(`.`);
+        //     } else {
+        //         document.write(`, `);
+        //     }
+        // }
 
-        // 4 Faça um algoritmo que calcule e escreva a média aritmética dos números inteiros entre 15 (inclusive) e 100 (inclusive).
+        // // 4 Faça um algoritmo que calcule e escreva a média aritmética dos números inteiros entre 15 (inclusive) e 100 (inclusive).
 
-        var soma = 0;
-        var quantidade = 0;
+        // var soma = 0;
+        // var quantidade = 0;
 
-        for (var i = 15; i <= 100; i++) {
-            soma += i;
-            quantidade++;
-        }
+        // for (var i = 15; i <= 100; i++) {
+        //     soma += i;
+        //     quantidade++;
+        // }
 
-        var media = soma / quantidade;
+        // var media = soma / quantidade;
 
-        alert(`A média aritmética dos números entre 15 e 100 é ${media}`);
+        // alert(`A média aritmética dos números entre 15 e 100 é ${media}`);
 
-        // 5 Faça um algoritmo que calcule e escreva a média aritmética dos dois números inteiros informados pelo usuário e todos os números inteiros entre eles. Considere que o primeiro sempre será menor que o segundo.
+        // // 5 Faça um algoritmo que calcule e escreva a média aritmética dos dois números inteiros informados pelo usuário e todos os números inteiros entre eles. Considere que o primeiro sempre será menor que o segundo.
 
-        var soma2 = 0;
-        var quantidade2 = 0;
+        // var soma2 = 0;
+        // var quantidade2 = 0;
 
-        var a = parseFloat(prompt('Qual o primeiro número?'));
-        var b = parseFloat(prompt('Qual o segundo número?'));
+        // var a = parseFloat(prompt('Qual o primeiro número?'));
+        // var b = parseFloat(prompt('Qual o segundo número?'));
 
-        for (var i = a; i <= b; i++) {
-            soma2 += i;
-            quantidade2++;
-        }
+        // for (var i = a; i <= b; i++) {
+        //     soma2 += i;
+        //     quantidade2++;
+        // }
 
-        var media2 = soma2 / quantidade2;
-        var media = (a + b) / 2;
+        // var media2 = soma2 / quantidade2;
+        // var media = (a + b) / 2;
 
-        alert(`A média aritmética entre ${a} e ${b} é ${media}. Já a média aritmética dos números entre ${a} e ${b} é ${media2}`);
+        // alert(`A média aritmética entre ${a} e ${b} é ${media}. Já a média aritmética dos números entre ${a} e ${b} é ${media2}`);
 
-        // 6 Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.
+        // // 6 Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.
 
-        var aprovados = 0;
+        // var aprovados = 0;
 
-        do {
-            var nota1 = parseFloat(prompt("Digite a primeira nota:"));
-            var nota2 = parseFloat(prompt("Digite a segunda nota:"));
+        // do {
+        //     var nota1 = parseFloat(prompt("Digite a primeira nota:"));
+        //     var nota2 = parseFloat(prompt("Digite a segunda nota:"));
 
-            var media = (nota1 + nota2) / 2;
+        //     var media = (nota1 + nota2) / 2;
 
-            if (media >= 9.5) {
-                alert("Aluno aprovado!");
-                aprovados++;
-            } else {
-                alert("Aluno reprovado.");
-            }
+        //     if (media >= 9.5) {
+        //         alert("Aluno aprovado!");
+        //         aprovados++;
+        //     } else {
+        //         alert("Aluno reprovado.");
+        //     }
 
-            var continuar = prompt("Calcular a média de outro aluno? (S/N)");
+        //     var continuar = prompt("Calcular a média de outro aluno? (S/N)");
 
-        } while (continuar == "S");
+        // } while (continuar == "S");
 
-        alert("Quantidade de alunos aprovados: " + aprovados);
+        // alert("Quantidade de alunos aprovados: " + aprovados);
 
-        // 7 Escreva um algoritmo para ler as notas de avaliações de um aluno, calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. São 6 notas ao total. Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um novo valor ao usuário. 
+        // // 7 Escreva um algoritmo para ler as notas de avaliações de um aluno, calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. São 6 notas ao total. Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um novo valor ao usuário. 
 
-        var notas = [];
-        var nota;
-        var soma = 0;
-        var i = 1;
+        // var notas = [];
+        // var nota;
+        // var soma = 0;
+        // var i = 1;
 
-        while (i <= 6) {
-            nota = parseFloat(prompt(`Digite a nota ${i}:`));
+        // while (i <= 6) {
+        //     nota = parseFloat(prompt(`Digite a nota ${i}:`));
 
-            while (nota < 0 || nota > 10 || isNaN(nota)) {
-                nota = parseFloat(prompt(`Nota inválida! Digite novamente a nota ${i}:`));
-            }
+        //     while (nota < 0 || nota > 10 || isNaN(nota)) {
+        //         nota = parseFloat(prompt(`Nota inválida! Digite novamente a nota ${i}:`));
+        //     }
 
-            notas[i - 1] = nota;
-            soma += nota;
-            i++;
-        }
+        //     notas[i - 1] = nota;
+        //     soma += nota;
+        //     i++;
+        // }
 
-        var media = soma / 6;
+        // var media = soma / 6;
 
-        alert(`A média do aluno é: ${media}`);
+        // alert(`A média do aluno é: ${media}`);
 
-        // 8 Ler um valor N e imprimir todos os valores inteiros entre 1 (inclusive) e N (inclusive). Considere que o N será sempre maior que ZERO. N  é um valor informado pelo usuário.
+        // // 8 Ler um valor N e imprimir todos os valores inteiros entre 1 (inclusive) e N (inclusive). Considere que o N será sempre maior que ZERO. N  é um valor informado pelo usuário.
 
-        var n = parseInt(prompt('Digite um valor N:'));
-        var i = 1;
+        // var n = parseInt(prompt('Digite um valor N:'));
+        // var i = 1;
 
-        while (i <= n) {
-            document.write(i);
-            if (i == n){
-                document.write(`.`);
-            } else {
-                document.write(`, `);
-            }
-            i++;
-        }
+        // while (i <= n) {
+        //     document.write(i);
+        //     if (i == n){
+        //         document.write(`.`);
+        //     } else {
+        //         document.write(`, `);
+        //     }
+        //     i++;
+        // }
 
-        // 9 Escreva um algoritmo para imprimir os 10 primeiros números inteiros maiores que 100.
+        // // 9 Escreva um algoritmo para imprimir os 10 primeiros números inteiros maiores que 100.
 
-        var maiores = 110;
-        var i = 1;
+        // var maiores = 110;
+        // var i = 1;
 
-        while ((i + 100) <= maiores) {
-            document.write(i + 100);
-            if ((i + 100) == maiores){
-                document.write('.');
-            } else {
-                document.write('; ');
-            }
-            i++;
-        }
+        // while ((i + 100) <= maiores) {
+        //     document.write(i + 100);
+        //     if ((i + 100) == maiores){
+        //         document.write('.');
+        //     } else {
+        //         document.write('; ');
+        //     }
+        //     i++;
+        // }
 
-        // 10 Escreva um programa para imprimir todas as tabuadas de 1 a N. N será informado pelo usuário.
+        // // 10 Escreva um programa para imprimir todas as tabuadas de 1 a N. N será informado pelo usuário.
 
-        document.write('Tabuadas de Multiplicação Personalizadas! <br>');
-        document.write('<img src="segredo_nao_abra/numeros.png"> <br>');
+        // document.write('Tabuadas de Multiplicação Personalizadas! <br>');
+        // document.write('<img src="segredo_nao_abra/numeros.png"> <br>');
 
-        var tabuada = "";
-        var n = parseFloat(prompt('Bem-vindo à Tabuadas de Multiplicação Personalizadas! \nInforme o valor da maior tabuada desejada:'))
+        // var tabuada = "";
+        // var n = parseFloat(prompt('Bem-vindo à Tabuadas de Multiplicação Personalizadas! \nInforme o valor da maior tabuada desejada:'))
 
-        for (var i = 1; i <= n; i++) {
-            tabuada += `Tabuada do ${i} : <br>`; 
-            for (var a = 1; a <= 10; a++) {
-                tabuada += i + " x " + a + " = " + (i * a) + "<br>"; 
-            }
-            tabuada += "<br>";
-        }
-        document.write(tabuada);
+        // for (var i = 1; i <= n; i++) {
+        //     tabuada += `Tabuada do ${i} : <br>`; 
+        //     for (var a = 1; a <= 10; a++) {
+        //         tabuada += i + " x " + a + " = " + (i * a) + "<br>"; 
+        //     }
+        //     tabuada += "<br>";
+        // }
+        // document.write(tabuada);
 
-        // 11 Escreva um programa em que o usuário informe 10 valores e escreva quantos desses valores lidos estão entre os números 24 e 42 (incluindo os valores 24 e 42) e quantos deles estão fora deste intervalo.
+        // // 11 Escreva um programa em que o usuário informe 10 valores e escreva quantos desses valores lidos estão entre os números 24 e 42 (incluindo os valores 24 e 42) e quantos deles estão fora deste intervalo.
 
-        var dentroIntervalo = 0;
-        var foraIntervalo = 0;
+        // var dentroIntervalo = 0;
+        // var foraIntervalo = 0;
 
-        document.write('Você digitou 10 valores. <br>')
+        // document.write('Você digitou 10 valores. <br>')
 
-        for (var i = 1; i <= 10; i++) {
-            var valor = parseFloat(prompt(`Digite 10 valores. Informe o valor ${i}:`));
+        // for (var i = 1; i <= 10; i++) {
+        //     var valor = parseFloat(prompt(`Digite 10 valores. Informe o valor ${i}:`));
 
-            if (valor >= 24 && valor <= 42) {
-                dentroIntervalo++;
-            } else {
-                foraIntervalo++;
-            }
+        //     if (valor >= 24 && valor <= 42) {
+        //         dentroIntervalo++;
+        //     } else {
+        //         foraIntervalo++;
+        //     }
 
-            if (valor == 42){
-            document.write('Parabéns, você encontrou a resposta para a vida, o Universo e tudo o mais! <br>')
-            document.write('<img src="segredo_nao_abra/galaxy.png"> <br>');
-        }
-        }
+        //     if (valor == 42){
+        //     document.write('Parabéns, você encontrou a resposta para a vida, o Universo e tudo o mais! <br>')
+        //     document.write('<img src="segredo_nao_abra/galaxy.png"> <br>');
+        // }
+        // }
 
-        document.write(`Quantidade de valores dentro do intervalo 24 a 42: ${dentroIntervalo} <br>`);
-        document.write(`Quantidade de valores fora do intervalo2 4 a 42: ${foraIntervalo}`);
+        // document.write(`Quantidade de valores dentro do intervalo 24 a 42: ${dentroIntervalo} <br>`);
+        // document.write(`Quantidade de valores fora do intervalo2 4 a 42: ${foraIntervalo}`);
 
 
 
