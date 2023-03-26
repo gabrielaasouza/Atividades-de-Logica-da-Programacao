@@ -6,6 +6,11 @@ Aqui você encontra as atividades da Hora de Codar sobre lógica de programaçã
 <img src="https://github.com/gabriela4souza/Atividades-de-Logica-da-Programacao/blob/main/Hora%20de%20Codar/segredo_nao_abra/nazare.gif" alt="Visualização da página">
 </p>
 
+Atividades:
+- Hora de Codar I;
+- Hora de Codar II: A Vingança do Coder;
+- Hora de Codar III: De Volta para o Código.
+
 # 🔨 Ferramentas
 
 O código dessa atividade foi feito usando o VS Code e o ChatGPT para explicar as funções do JS e auxiliar na realização das atividades.
