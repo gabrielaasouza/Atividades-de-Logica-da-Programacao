@@ -13,4 +13,4 @@ Atividades:
 
 # 🔨 Ferramentas
 
-O código dessa atividade foi feito usando o VS Code e o ChatGPT para explicar as funções do JS e auxiliar na realização das atividades.
+O código dessa atividade foi feito usando o VS Code.
